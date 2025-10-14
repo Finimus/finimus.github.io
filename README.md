@@ -1,6 +1,6 @@
-# Portfolio Website Clone
+# Finimus website
 
-A modern, responsive portfolio website clone built with HTML5, CSS3, JavaScript, and TailwindCSS.
+A modern, responsive portfolio website built with HTML5, CSS3, JavaScript, and TailwindCSS.
 
 ## 🚀 Features
 
