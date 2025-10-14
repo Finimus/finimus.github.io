@@ -343,6 +343,128 @@ nav a:hover::after {
   }
 }
 
+/* Interactive Skill Bubbles */
+.skill-bubble {
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 4px;
+  background: rgba(31, 41, 55, 0.8);
+  border: 1px solid rgba(75, 85, 99, 0.5);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.skill-bubble::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.skill-bubble:hover {
+  transform: translateY(-3px) scale(1.05);
+  background: rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 
+    0 10px 25px rgba(59, 130, 246, 0.2),
+    0 0 20px rgba(147, 51, 234, 0.1);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(135deg, #3b82f6 0%, #9333ea 100%);
+}
+
+.skill-bubble:hover::before {
+  left: 100%;
+}
+
+.skill-bubble:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+/* Gradient text effect for hover */
+.skill-bubble:hover {
+  background: linear-gradient(135deg, #3b82f6 0%, #9333ea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-image: linear-gradient(135deg, #3b82f6, #9333ea) 1;
+}
+
+/* Different hover colors for different categories */
+.skill-bubble.programming:hover {
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+.skill-bubble.design:hover {
+  background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: 0 10px 25px rgba(236, 72, 153, 0.3);
+}
+
+.skill-bubble.media:hover {
+  background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+}
+
+.skill-bubble.tools:hover {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+}
+
+.skill-bubble.music:hover {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+}
+
+.skill-bubble.ai:hover {
+  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: 0 10px 25px rgba(6, 182, 212, 0.3);
+}
+
+/* Bubble animation on page load */
+@keyframes bubbleFloat {
+  0% { transform: translateY(20px) scale(0.8); opacity: 0; }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.skill-bubble {
+  animation: bubbleFloat 0.6s ease-out forwards;
+}
+
+.skill-bubble:nth-child(1) { animation-delay: 0.1s; }
+.skill-bubble:nth-child(2) { animation-delay: 0.15s; }
+.skill-bubble:nth-child(3) { animation-delay: 0.2s; }
+.skill-bubble:nth-child(4) { animation-delay: 0.25s; }
+.skill-bubble:nth-child(5) { animation-delay: 0.3s; }
+.skill-bubble:nth-child(6) { animation-delay: 0.35s; }
+.skill-bubble:nth-child(7) { animation-delay: 0.4s; }
+.skill-bubble:nth-child(8) { animation-delay: 0.45s; }
+.skill-bubble:nth-child(9) { animation-delay: 0.5s; }
+
 /* Accessibility Enhancements */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -352,6 +474,14 @@ nav a:hover::after {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+  
+  .skill-bubble {
+    animation: none;
+  }
+  
+  .skill-bubble:hover {
+    transform: none;
   }
 }
 
