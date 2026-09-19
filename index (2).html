@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finimus — IT, Cybersecurity &amp; AI</title>
+<meta name="description" content="Personal portfolio of Finimus — IT student passionate about cybersecurity, AI, programming and technology.">
+<meta name="theme-color" content="#0a0f0c">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Finimus — IT, Cybersecurity &amp; AI">
+<meta property="og:description" content="Personal portfolio of Finimus — IT student passionate about cybersecurity, AI, programming and technology.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background layers -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-scanlines" aria-hidden="true"></div>
+
+<!-- Skip link for accessibility -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#home" class="brand">
+      <span class="brand-bracket">&gt;</span>FINIMUS<span class="brand-cursor">_</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" data-nav="home" data-i18n="nav.home">Home</a>
+      <a href="#about" data-nav="about" data-i18n="nav.about">About</a>
+      <a href="#skills" data-nav="skills" data-i18n="nav.skills">Skills</a>
+      <a href="#achievement" data-nav="achievement" data-i18n="nav.achievement">Achievement</a>
+      <a href="#social" data-nav="social" data-i18n="nav.social">Social</a>
+      <a href="#contact" data-nav="contact" data-i18n="nav.contact">Contact</a>
+      <a href="#terminal" data-nav="terminal" data-i18n="nav.terminal">Terminal</a>
+    </nav>
+
+    <div class="lang-toggle" role="group" aria-label="Language / Limbă">
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+      <span class="lang-sep">|</span>
+      <button type="button" class="lang-btn" data-lang="ro">RO</button>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ TRACE RAIL (signature element) ============ -->
+<aside class="trace-rail" id="traceRail" aria-hidden="true">
+  <div class="trace-rail-label">TRACEROUTE</div>
+  <ol class="trace-hops">
+    <li data-hop="home"><span class="hop-idx">01</span><span class="hop-name">home</span><span class="hop-ms">2ms</span></li>
+    <li data-hop="about"><span class="hop-idx">02</span><span class="hop-name">about</span><span class="hop-ms">6ms</span></li>
+    <li data-hop="skills"><span class="hop-idx">03</span><span class="hop-name">skills</span><span class="hop-ms">9ms</span></li>
+    <li data-hop="achievement"><span class="hop-idx">04</span><span class="hop-name">achievement</span><span class="hop-ms">12ms</span></li>
+    <li data-hop="social"><span class="hop-idx">05</span><span class="hop-name">social</span><span class="hop-ms">16ms</span></li>
+    <li data-hop="contact"><span class="hop-idx">06</span><span class="hop-name">contact</span><span class="hop-ms">20ms</span></li>
+    <li data-hop="terminal"><span class="hop-idx">07</span><span class="hop-name">terminal</span><span class="hop-ms">24ms</span></li>
+  </ol>
+</aside>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-inner hero-inner-solo">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">IT STUDENT · CYBERSECURITY · AI · PROGRAMMING</p>
+        <h1 class="hero-title">FINIMUS<span class="cursor-blink">_</span></h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">Building with technology. Learning through cybersecurity. Exploring AI.</p>
+        <div class="hero-actions">
+          <a href="#skills" class="btn btn-primary" data-i18n="hero.btnSkills">VIEW SKILLS</a>
+          <a href="#contact" class="btn btn-ghost" data-i18n="hero.btnContact">CONTACT ME</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="path-tag">/about</p>
+
+      <div class="about-grid about-grid-solo">
+        <div class="about-text">
+          <h2 class="section-title" data-i18n="about.title">Learning by building, breaking, and understanding <span class="accent">why</span> it works.</h2>
+          <p data-i18n="about.p1">I'm an IT student with a growing focus on <strong>cybersecurity</strong>, <strong>AI</strong>, and <strong>software development</strong>. Most of what I know didn't come from a classroom first — it came from setting up a lab, misconfiguring something, and figuring out why it broke.</p>
+          <p data-i18n="about.p2">I spend my time between Linux environments, small programming projects, CTF challenges, and experimenting with AI tools to see where the practical edge of the field actually is right now.</p>
+          <p data-i18n="about.p3">This site is a running log of that process — not a finished résumé, but a workspace that grows as I do.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS (What I Work With) ============ -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <p class="path-tag">/skills</p>
+      <h2 class="section-title" data-i18n="skills.title">What I work with.</h2>
+
+      <div class="skills-grid skills-grid-6">
+
+        <div class="skill-panel">
+          <h3 class="skill-cat"><span class="skill-num">01</span><span data-i18n="skills.cat1">SYSTEMS &amp; HARDWARE</span></h3>
+          <ul class="skill-list skill-list-plain">
+            <li>Windows</li>
+            <li>Linux</li>
+            <li data-i18n="skills.pcAssembly">PC Assembly &amp; Maintenance</li>
+            <li data-i18n="skills.troubleshooting">Troubleshooting</li>
+          </ul>
+        </div>
+
+        <div class="skill-panel">
+          <h3 class="skill-cat"><span class="skill-num">02</span><span data-i18n="skills.cat2">PROGRAMMING</span></h3>
+          <ul class="skill-list skill-list-plain">
+            <li>C++</li>
+            <li>Python</li>
+          </ul>
+        </div>
+
+        <div class="skill-panel">
+          <h3 class="skill-cat"><span class="skill-num">03</span><span data-i18n="skills.cat3">AI</span></h3>
+          <ul class="skill-list skill-list-plain">
+            <li>LLMs</li>
+            <li data-i18n="skills.promptEng">Prompt Engineering</li>
+            <li data-i18n="skills.aiTools">AI Tools</li>
+          </ul>
+        </div>
+
+        <div class="skill-panel">
+          <h3 class="skill-cat"><span class="skill-num">04</span><span data-i18n="skills.cat4">CREATIVE &amp; SOFTWARE</span></h3>
+          <ul class="skill-list skill-list-plain">
+            <li>Microsoft Office</li>
+            <li>Canva</li>
+            <li>Photoshop</li>
+            <li data-i18n="skills.webDesign">Web Design — Basic</li>
+          </ul>
+        </div>
+
+        <div class="skill-panel">
+          <h3 class="skill-cat"><span class="skill-num">05</span><span data-i18n="skills.cat5">MEDIA &amp; TECHNICAL</span></h3>
+          <ul class="skill-list skill-list-plain">
+            <li data-i18n="skills.audioMixing">Audio Mixing</li>
+            <li data-i18n="skills.liveStreaming">Live Streaming</li>
+            <li data-i18n="skills.videoProjection">Video &amp; Projection</li>
+          </ul>
+        </div>
+
+        <div class="skill-panel">
+          <h3 class="skill-cat"><span class="skill-num">06</span><span data-i18n="skills.cat6">LANGUAGES</span></h3>
+          <ul class="skill-list skill-list-plain">
+            <li data-i18n="skills.langRo">Romanian — Native</li>
+            <li data-i18n="skills.langEn">English — Fluent</li>
+            <li data-i18n="skills.langIt">Italian — Conversational</li>
+            <li data-i18n="skills.langFr">French — Basic</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENT ============ -->
+  <section class="section achievement-section" id="achievement">
+    <div class="section-inner">
+      <p class="path-tag">/achievement</p>
+
+      <div class="achievement-card">
+        <span class="achievement-icon" aria-hidden="true">★</span>
+        <div class="achievement-text">
+          <p class="achievement-line1" data-i18n="achievement.line1">1st Place — National Cyber Security Olympiad</p>
+          <p class="achievement-line2" data-i18n="achievement.line2">County Stage, 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MY SOCIAL ============ -->
+  <section class="section section-alt" id="social">
+    <div class="section-inner">
+      <p class="path-tag">/social</p>
+      <h2 class="section-title" data-i18n="social.title">Where else to find me.</h2>
+
+      <div class="social-grid">
+
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-card" data-placeholder="true">
+          <span class="social-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H6v3h2v8h3v-8h2.5l.5-3H11V7.5A1.5 1.5 0 0 1 12.5 6H15z"/></svg>
+          </span>
+          <span class="social-name">Facebook</span>
+          <span class="social-sub" data-i18n="social.addLink">add link →</span>
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-card" data-placeholder="true">
+          <span class="social-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <span class="social-name">Instagram</span>
+          <span class="social-sub" data-i18n="social.addLink">add link →</span>
+        </a>
+
+        <a href="https://github.com/Finimus" target="_blank" rel="noopener noreferrer" class="social-card">
+          <span class="social-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+          </span>
+          <span class="social-name">GitHub</span>
+          <span class="social-sub">@Finimus</span>
+        </a>
+
+        <a href="https://linkedin.com/in/fineas-turcu/" target="_blank" rel="noopener noreferrer" class="social-card">
+          <span class="social-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="7.5" y1="10.5" x2="7.5" y2="16.5"/><circle cx="7.5" cy="7.3" r="0.9" fill="currentColor" stroke="none"/><path d="M11.5 16.5v-4a2 2 0 0 1 4 0v4"/><line x1="11.5" y1="10.5" x2="11.5" y2="16.5"/></svg>
+          </span>
+          <span class="social-name">LinkedIn</span>
+          <span class="social-sub" data-i18n="social.viewProfile">view profile →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <p class="path-tag">/contact</p>
+      <h2 class="section-title" data-i18n="contact.title">Let's talk.</h2>
+      <p class="section-lead" data-i18n="contact.lead">Reach me directly at:</p>
+
+      <a href="mailto:finimus7@gmail.com" class="contact-email-btn">
+        <span class="contact-email-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+        </span>
+        <span class="contact-email-text">
+          <span class="contact-email-label" data-i18n="contact.btn">SEND EMAIL</span>
+          <span class="contact-email-addr">finimus7@gmail.com</span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ TERMINAL (the only terminal on the site) ============ -->
+  <section class="section terminal-section" id="terminal">
+    <div class="section-inner">
+      <p class="path-tag">/terminal</p>
+      <h2 class="section-title" data-i18n="terminal.title">Try it yourself.</h2>
+      <p class="section-lead" data-i18n="terminal.lead">A live shell into this page. Type <code>help</code> to see what it can do.</p>
+
+      <div class="interactive-terminal" id="interactiveTerminal">
+        <div class="term-chrome">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="term-title">finimus@portfolio: ~</span>
+        </div>
+        <div class="term-output" id="termOutput"></div>
+        <div class="term-input-row">
+          <span class="prompt">finimus@portfolio:~$</span>
+          <input type="text" id="termInput" class="term-input" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal command input">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">FINIMUS</div>
+    <div class="footer-tag">IT · CYBERSECURITY · AI</div>
+    <div class="footer-copy">© <span id="year"></span> Finimus. Built with HTML, CSS &amp; JavaScript.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
