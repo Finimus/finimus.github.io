@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://finimus.runs-on.dev/sitemap.xml
