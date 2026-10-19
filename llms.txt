@@ -1,0 +1,27 @@
+
+# Turcu Fineas | Finimus
+
+> Personal website of Turcu Fineas, known online as Finimus. A tech enthusiast interested in technology, artificial intelligence, computer systems, and digital projects.
+
+## About
+
+Turcu Fineas is a technology enthusiast who enjoys exploring, experimenting, and turning ideas into things that work. His approach focuses on learning by building, breaking, and understanding how things work.
+
+## Website
+
+- Homepage: https://finimus.runs-on.dev/
+- GitHub: https://github.com/Finimus
+- LinkedIn: https://www.linkedin.com/in/fineas-turcu/
+
+## Interests
+
+- Artificial intelligence and large language models
+- Computer systems, Windows, and Linux
+- Programming and software projects
+- Web development and digital tools
+- Technology experimentation and problem-solving
+
+## Notes
+
+- This website is the personal website of Turcu Fineas (Finimus).
+- For current information, refer to the website and linked public profiles.
