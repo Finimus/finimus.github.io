@@ -1,18 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Finimus",
-  "alternateName": "Turcu Fineas | Finimus",
-  "url": "https://finimus.runs-on.dev/"
-}
-    </script>
     <meta charset="UTF-8"/>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <title>Turcu Fineas | Finimus</title>
@@ -21,28 +12,33 @@
         name="description"
         content="Tech enthusiast who loves exploring, experimenting, and turning ideas into things that actually work."
     />
-
     <meta name="author" content="Turcu Fineas"/>
     <meta name="robots" content="index, follow"/>
     <meta name="theme-color" content="#0a0f0c"/>
 
+    <!-- Canonical -->
+    <link rel="canonical" href="https://finimus.runs-on.dev/"/>
+
     <!-- Open Graph -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Finimus"/>
     <meta property="og:title" content="Turcu Fineas | Finimus"/>
     <meta
         property="og:description"
         content="Tech enthusiast who loves exploring, experimenting, and turning ideas into things that actually work."
     />
-    <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://finimus.runs-on.dev/"/>
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Turcu Fineas | Finimus"/>
+    <meta
+        name="twitter:description"
+        content="Tech enthusiast who loves exploring, experimenting, and turning ideas into things that actually work."
+    />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
-
-    <!-- Canonical -->
-    <link rel="canonical" href="https://finimus.runs-on.dev/"/>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -51,13 +47,30 @@
         rel="stylesheet"
     />
 
+    <!-- Website Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Finimus",
+        "alternateName": [
+            "Turcu Fineas",
+            "Fineas Turcu"
+        ],
+        "url": "https://finimus.runs-on.dev/"
+    }
+    </script>
+
     <!-- Person Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Turcu Fineas",
-        "alternateName": "Finimus",
+        "alternateName": [
+            "Fineas Turcu",
+            "Finimus"
+        ],
         "url": "https://finimus.runs-on.dev/",
         "description": "Tech enthusiast who loves exploring, experimenting, and turning ideas into things that actually work.",
         "sameAs": [
@@ -66,7 +79,6 @@
         ]
     }
     </script>
-
 </head>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
